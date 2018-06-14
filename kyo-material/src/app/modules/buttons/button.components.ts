@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-buttons-button',
@@ -6,4 +6,8 @@ import {Component} from '@angular/core';
 })
 export class ButtonComponent {
 
+  clickevent(e): void {
+    alert('点击有效！');
+    console.log(e);
+  }
 }
