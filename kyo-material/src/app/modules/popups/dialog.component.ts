@@ -15,7 +15,6 @@ export class DialogComponent {
     openDialog(): void {
         const dialogRef = this.dialog.open(DialogDetailComponent, {
             width: '250px',
-            position: { top: '200px', left: '200px' },
             data: { name: this.name, animal: this.animal }
         });
 
