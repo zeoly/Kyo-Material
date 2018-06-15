@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.modules';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatBadgeModule } from '@angular/material/badge';
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -20,6 +21,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './modules/buttons/button.components';
 import { ButtonToggleComponent } from './modules/buttons/button-toggle.component';
+import { BadgeComponent } from './modules/buttons/badge.component';
 import { IconComponent } from './modules/buttons/icon.component';
 import { SideNavComponent } from './modules/navigation/side-nav.component';
 import { AutocompleteComponent } from './modules/formcontrol/autocomplete.component';
@@ -32,6 +34,7 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     AppComponent,
     ButtonComponent,
     ButtonToggleComponent,
+    BadgeComponent,
     IconComponent,
     SideNavComponent,
     AutocompleteComponent,
@@ -48,6 +51,7 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     MatFormFieldModule,
     MatButtonModule,
     MatButtonToggleModule,
+    MatBadgeModule,
     MatIconModule,
     MatSidenavModule,
     MatListModule,

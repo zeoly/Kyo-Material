@@ -1,0 +1,18 @@
+<h3>普通标记</h3>
+<span matBadge="1">文本上的标记</span>
+<h3>非重叠的标记</h3>
+<span matBadge="2" matBadgeOverlap="false">文本上的标记</span>
+<h3>按钮上的标记</h3>
+<button mat-raised-button color="primary" matBadge="3" matBadgeColor="accent">按钮</button>
+<h3>图标上的标记</h3>
+<mat-icon matBadge="4" matBadgeColor="warn">home</mat-icon>
+<h3>大号标记</h3>
+<mat-icon matBadge="5" matBadgeColor="warn" matBadgeSize="large">home</mat-icon>
+<h3>小号标记</h3>
+<mat-icon matBadge="6" matBadgeColor="warn" matBadgeSize="small">home</mat-icon>
+<h3>标记位置也可以变更</h3>
+<mat-icon matBadge="7" matBadgeColor="warn" matBadgePosition="before">home</mat-icon>
+<mat-icon matBadge="8" matBadgeColor="warn" matBadgePosition="below before">home</mat-icon>
+<mat-icon matBadge="9" matBadgeColor="warn" matBadgePosition="below">home</mat-icon>
+<h3>动态控制标记的显示与隐藏</h3>
+<button mat-raised-button (click)="toggoleVisibility()" [matBadgeHidden]="!visible" color="primary" matBadge="10" matBadgeColor="accent">点我切换</button>
