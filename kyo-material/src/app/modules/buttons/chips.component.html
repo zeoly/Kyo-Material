@@ -1,0 +1,22 @@
+<h3>基本的切片</h3>
+<mat-chip-list>
+    <mat-chip>彩 电</mat-chip>
+    <mat-chip color="primary" selected="true">冰 箱</mat-chip>
+    <mat-chip color="accent" selected="true">空 调</mat-chip>
+</mat-chip-list>
+<h3>失效第一个切片</h3>
+<mat-chip-list>
+    <mat-chip disabled>彩 电</mat-chip>
+    <mat-chip color="primary" selected="true">冰 箱</mat-chip>
+    <mat-chip color="accent" selected="true">空 调</mat-chip>
+</mat-chip-list>
+<h3>与input配合</h3>
+<mat-form-field class="demo-chip-list">
+    <mat-chip-list #chipList>
+        <mat-chip *ngFor="let appliance of appliances" [selectable]="selectable" [removable]="removable" (removed)="remove(appliance)">
+            {{appliance.name}}
+            <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+        </mat-chip>
+        <input placeholder="收旧电器，旧电脑..." [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur" (matChipInputTokenEnd)="add($event)" />
+    </mat-chip-list>
+</mat-form-field>
