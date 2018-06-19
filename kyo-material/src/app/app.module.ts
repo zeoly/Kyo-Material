@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.modules';
 
+import { MatCardModule } from '@angular/material/card';
+
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatBadgeModule } from '@angular/material/badge';
@@ -21,6 +23,9 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
+
+import { CardComponent } from './modules/layout/card.component';
+
 import { ButtonComponent } from './modules/buttons/button.components';
 import { ButtonToggleComponent } from './modules/buttons/button-toggle.component';
 import { BadgeComponent } from './modules/buttons/badge.component';
@@ -38,6 +43,7 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
 @NgModule({
   declarations: [
     AppComponent,
+    CardComponent,
     ButtonComponent,
     ButtonToggleComponent,
     BadgeComponent,
@@ -58,6 +64,7 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     BrowserAnimationsModule,
     AppRoutingModule,
     MatFormFieldModule,
+    MatCardModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatBadgeModule,

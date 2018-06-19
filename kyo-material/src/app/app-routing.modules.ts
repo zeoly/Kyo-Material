@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { CardComponent } from './modules/layout/card.component';
+
 import { ButtonComponent } from './modules/buttons/button.components';
 import { ButtonToggleComponent } from './modules/buttons/button-toggle.component';
 import { BadgeComponent } from './modules/buttons/badge.component';
@@ -17,6 +19,7 @@ import { DialogComponent } from './modules/popups/dialog.component';
 const routes: Routes = [
     { path: 'formcontrol/autocomplete', component: AutocompleteComponent },
     { path: 'formcontrol/input', component: InputComponent },
+    { path: 'layout/card', component: CardComponent },
     { path: 'buttons/button', component: ButtonComponent },
     { path: 'buttons/button-toggle', component: ButtonToggleComponent },
     { path: 'buttons/badge', component: BadgeComponent },
