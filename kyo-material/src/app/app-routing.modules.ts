@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { CardComponent } from './modules/layout/card.component';
+import { DividerComponent } from './modules/layout/divider.component';
 
 import { ButtonComponent } from './modules/buttons/button.components';
 import { ButtonToggleComponent } from './modules/buttons/button-toggle.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
     { path: 'formcontrol/autocomplete', component: AutocompleteComponent },
     { path: 'formcontrol/input', component: InputComponent },
     { path: 'layout/card', component: CardComponent },
+    { path: 'layout/divider', component: DividerComponent },
     { path: 'buttons/button', component: ButtonComponent },
     { path: 'buttons/button-toggle', component: ButtonToggleComponent },
     { path: 'buttons/badge', component: BadgeComponent },

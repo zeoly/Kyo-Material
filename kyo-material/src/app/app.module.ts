@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.modules';
 
 import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
@@ -25,6 +26,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { AppComponent } from './app.component';
 
 import { CardComponent } from './modules/layout/card.component';
+import { DividerComponent } from './modules/layout/divider.component';
 
 import { ButtonComponent } from './modules/buttons/button.components';
 import { ButtonToggleComponent } from './modules/buttons/button-toggle.component';
@@ -44,6 +46,7 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
   declarations: [
     AppComponent,
     CardComponent,
+    DividerComponent,
     ButtonComponent,
     ButtonToggleComponent,
     BadgeComponent,
@@ -65,6 +68,7 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     AppRoutingModule,
     MatFormFieldModule,
     MatCardModule,
+    MatDividerModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatBadgeModule,
