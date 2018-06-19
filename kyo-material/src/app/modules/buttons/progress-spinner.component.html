@@ -1,0 +1,11 @@
+<h3>基本的进度环</h3>
+<mat-spinner></mat-spinner>
+<h3>0到100的determinate模式进度环</h3>
+<mat-progress-spinner mode="determinate" [(value)]="progress" color="accent"></mat-progress-spinner>
+<button mat-raised-button (click)="roll()" color="primary">点我随机roll：{{progress}}</button>
+<h3>indeterminate进度环</h3>
+<mat-progress-spinner mode="indeterminate" color="warn"></mat-progress-spinner>
+<h3>可修改线宽</h3>
+<mat-spinner strokeWidth="20"></mat-spinner>
+<h3>可修改半径</h3>
+<mat-spinner diameter="40"></mat-spinner>

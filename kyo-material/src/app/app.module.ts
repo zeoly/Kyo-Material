@@ -6,8 +6,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatChipsModule } from '@angular/material/chips';
-
 import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 
@@ -23,6 +24,8 @@ import { ButtonComponent } from './modules/buttons/button.components';
 import { ButtonToggleComponent } from './modules/buttons/button-toggle.component';
 import { BadgeComponent } from './modules/buttons/badge.component';
 import { ChipsComponent } from './modules/buttons/chips.component';
+import { ProgressSpinerComponent } from './modules/buttons/progress-spinner.component';
+
 
 import { IconComponent } from './modules/buttons/icon.component';
 import { SideNavComponent } from './modules/navigation/side-nav.component';
@@ -39,6 +42,7 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     BadgeComponent,
     ChipsComponent,
     IconComponent,
+    ProgressSpinerComponent,
     SideNavComponent,
     AutocompleteComponent,
     InputComponent,
@@ -57,6 +61,7 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     MatBadgeModule,
     MatChipsModule,
     MatIconModule,
+    MatProgressSpinnerModule,
     MatSidenavModule,
     MatListModule,
     MatInputModule,
