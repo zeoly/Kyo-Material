@@ -7,6 +7,7 @@ import { BadgeComponent } from './modules/buttons/badge.component';
 import { ChipsComponent } from './modules/buttons/chips.component';
 import { IconComponent } from './modules/buttons/icon.component';
 import { ProgressSpinerComponent } from './modules/buttons/progress-spinner.component';
+import { ProgressBarComponent } from './modules/buttons/progress-bar.component';
 
 import { AutocompleteComponent } from './modules/formcontrol/autocomplete.component';
 import { InputComponent } from './modules/formcontrol/input.component';
@@ -22,6 +23,7 @@ const routes: Routes = [
     { path: 'buttons/chips', component: ChipsComponent },
     { path: 'buttons/icon', component: IconComponent },
     { path: 'buttons/progress-spinner', component: ProgressSpinerComponent },
+    { path: 'buttons/progress-bar', component: ProgressBarComponent },
     { path: 'popups/dialog', component: DialogComponent }
 ];
 

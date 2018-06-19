@@ -1,0 +1,9 @@
+<h3>determinate模式的进度条</h3>
+<mat-progress-bar mode="determinate" [(value)]="progress" color="warn"></mat-progress-bar>
+<button mat-raised-button (click)="roll()" color="primary">点我随机roll：{{progress}}</button>
+<h3>indeterminate模式的进度条</h3>
+<mat-progress-bar mode="indeterminate"></mat-progress-bar>
+<h3>buffer模式的进度条</h3>
+<mat-progress-bar mode="buffer" value="30" bufferValue="60"></mat-progress-bar>
+<h3>query模式的进度条</h3>
+<mat-progress-bar mode="query"></mat-progress-bar>
