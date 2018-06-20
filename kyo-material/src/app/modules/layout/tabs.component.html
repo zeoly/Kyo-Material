@@ -1,0 +1,29 @@
+<h3>基本的标签页</h3>
+<mat-tab-group>
+    <mat-tab label="第一个"> 彩电 </mat-tab>
+    <mat-tab label="第二个"> 冰箱 </mat-tab>
+    <mat-tab label="第三个"> 空调 </mat-tab>
+</mat-tab-group>
+<h3>复杂标签头</h3>
+<mat-tab-group>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            带有<em>斜体</em>的标签头
+        </ng-template>
+        <h1>彩电</h1>
+        <p>...</p>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon>thumb_down</mat-icon>带有图标的标签头
+        </ng-template>
+        <h1>冰箱</h1>
+        <p>...</p>
+    </mat-tab>
+</mat-tab-group>
+<h3>带路由的标签页</h3>
+<nav mat-tab-nav-bar>
+    <a mat-tab-link *ngFor="let link of navLinks" [routerLink]="link.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+          {{link.label}}
+        </a>
+</nav>

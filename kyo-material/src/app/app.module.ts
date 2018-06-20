@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.modules';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
@@ -28,6 +29,7 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './modules/layout/card.component';
 import { DividerComponent } from './modules/layout/divider.component';
 import { ListComponent } from './modules/layout/list.component';
+import { TabsComponent } from './modules/layout/tabs.component';
 
 import { ButtonComponent } from './modules/buttons/button.components';
 import { ButtonToggleComponent } from './modules/buttons/button-toggle.component';
@@ -49,6 +51,7 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     CardComponent,
     DividerComponent,
     ListComponent,
+    TabsComponent,
     ButtonComponent,
     ButtonToggleComponent,
     BadgeComponent,
@@ -71,6 +74,8 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     MatFormFieldModule,
     MatCardModule,
     MatDividerModule,
+    MatListModule,
+    MatTabsModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatBadgeModule,
@@ -79,7 +84,6 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     MatProgressSpinnerModule,
     MatProgressBarModule,
     MatSidenavModule,
-    MatListModule,
     MatInputModule,
     MatSelectModule,
     MatAutocompleteModule,
