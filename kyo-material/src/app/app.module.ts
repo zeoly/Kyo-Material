@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.modules';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
@@ -14,7 +15,6 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -27,6 +27,7 @@ import { AppComponent } from './app.component';
 
 import { CardComponent } from './modules/layout/card.component';
 import { DividerComponent } from './modules/layout/divider.component';
+import { ListComponent } from './modules/layout/list.component';
 
 import { ButtonComponent } from './modules/buttons/button.components';
 import { ButtonToggleComponent } from './modules/buttons/button-toggle.component';
@@ -47,6 +48,7 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     AppComponent,
     CardComponent,
     DividerComponent,
+    ListComponent,
     ButtonComponent,
     ButtonToggleComponent,
     BadgeComponent,

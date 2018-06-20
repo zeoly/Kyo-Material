@@ -1,0 +1,17 @@
+<h3>简单的列表</h3>
+<mat-list>
+    <mat-list-item>冰箱</mat-list-item>
+    <mat-list-item>空调</mat-list-item>
+    <mat-list-item>洗衣机</mat-list-item>
+</mat-list>
+<h3>导航列表</h3>
+<mat-nav-list>
+    <a mat-list-item href="https://angular.io/">Angular</a>
+    <a mat-list-item href="https://material.angular.io/">Material</a>
+</mat-nav-list>
+<h3>选择列表: {{appliance.selectedOptions.selected.length}}</h3>
+<mat-selection-list #appliance>
+    <mat-list-option *ngFor="let appliance of appliances">
+        {{appliance}}
+    </mat-list-option>
+</mat-selection-list>
