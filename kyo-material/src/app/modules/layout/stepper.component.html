@@ -1,0 +1,45 @@
+<h3>简单的分步</h3>
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+    <mat-step>彩电
+        <ng-template matStepLabel>第一步</ng-template>
+    </mat-step>
+    <mat-step>冰箱
+        <ng-template matStepLabel>第二步</ng-template>
+    </mat-step>
+    <mat-step>空调
+        <ng-template matStepLabel>第三步</ng-template>
+    </mat-step>
+</mat-horizontal-stepper>
+<h3>垂直分步</h3>
+<mat-vertical-stepper [linear]="isLinear">
+    <mat-step>彩电
+        <ng-template matStepLabel>第一步</ng-template>
+    </mat-step>
+    <mat-step>冰箱
+        <ng-template matStepLabel>第二步</ng-template>
+    </mat-step>
+    <mat-step>空调
+        <ng-template matStepLabel>第三步</ng-template>
+    </mat-step>
+</mat-vertical-stepper>
+<h3>按钮控制分步间的跳转</h3>
+<mat-horizontal-stepper [linear]="isLinear">
+    <mat-step label="第一步">彩电
+        <div>
+            <button mat-button matStepperPrevious>后退</button>
+            <button mat-button matStepperNext>前进</button>
+        </div>
+    </mat-step>
+    <mat-step label="第二步">冰箱
+        <div>
+            <button mat-button matStepperPrevious>后退</button>
+            <button mat-button matStepperNext>前进</button>
+        </div>
+    </mat-step>
+    <mat-step label="第三步">空调
+        <div>
+            <button mat-button matStepperPrevious>后退</button>
+            <button mat-button matStepperNext>前进</button>
+        </div>
+    </mat-step>
+</mat-horizontal-stepper>

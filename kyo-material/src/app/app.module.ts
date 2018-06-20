@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.modules';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { MatStepperModule } from '@angular/material/stepper';
 import { MatTabsModule } from '@angular/material/tabs';
 
 import { MatButtonModule } from '@angular/material/button';
@@ -29,6 +30,7 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './modules/layout/card.component';
 import { DividerComponent } from './modules/layout/divider.component';
 import { ListComponent } from './modules/layout/list.component';
+import { StepperComponent } from './modules/layout/stepper.component';
 import { TabsComponent } from './modules/layout/tabs.component';
 
 import { ButtonComponent } from './modules/buttons/button.components';
@@ -51,6 +53,7 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     CardComponent,
     DividerComponent,
     ListComponent,
+    StepperComponent,
     TabsComponent,
     ButtonComponent,
     ButtonToggleComponent,
@@ -75,6 +78,7 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     MatCardModule,
     MatDividerModule,
     MatListModule,
+    MatStepperModule,
     MatTabsModule,
     MatButtonModule,
     MatButtonToggleModule,

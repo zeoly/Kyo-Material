@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CardComponent } from './modules/layout/card.component';
 import { DividerComponent } from './modules/layout/divider.component';
 import { ListComponent } from './modules/layout/list.component';
+import { StepperComponent } from './modules/layout/stepper.component';
 import { TabsComponent } from './modules/layout/tabs.component';
 
 import { ButtonComponent } from './modules/buttons/button.components';
@@ -25,6 +26,7 @@ const routes: Routes = [
     { path: 'layout/card', component: CardComponent },
     { path: 'layout/divider', component: DividerComponent },
     { path: 'layout/list', component: ListComponent },
+    { path: 'layout/stepper', component: StepperComponent },
     { path: 'layout/tabs', component: TabsComponent },
     { path: 'buttons/button', component: ButtonComponent },
     { path: 'buttons/button-toggle', component: ButtonToggleComponent },
