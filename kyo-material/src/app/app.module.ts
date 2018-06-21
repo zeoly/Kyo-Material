@@ -9,6 +9,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
@@ -37,6 +38,7 @@ import { CheckboxComponent } from './modules/formcontrol/checkbox.component';
 import { InputComponent } from './modules/formcontrol/input.component';
 import { RadioComponent } from './modules/formcontrol/radio.component';
 import { SliderComponent } from './modules/formcontrol/slider.component';
+import { SlideToggleComponent } from './modules/formcontrol/slide-toggle.component';
 
 import { CardComponent } from './modules/layout/card.component';
 import { DividerComponent } from './modules/layout/divider.component';
@@ -66,6 +68,7 @@ import { TooltipComponent } from './modules/popups/tooltip.component';
     InputComponent,
     RadioComponent,
     SliderComponent,
+    SlideToggleComponent,
     CardComponent,
     DividerComponent,
     ListComponent,
@@ -99,6 +102,7 @@ import { TooltipComponent } from './modules/popups/tooltip.component';
     MatRadioModule,
     MatSelectModule,
     MatSliderModule,
+    MatSlideToggleModule,
     MatCardModule,
     MatDividerModule,
     MatListModule,

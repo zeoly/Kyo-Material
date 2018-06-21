@@ -6,6 +6,7 @@ import { CheckboxComponent } from './modules/formcontrol/checkbox.component';
 import { InputComponent } from './modules/formcontrol/input.component';
 import { RadioComponent } from './modules/formcontrol/radio.component';
 import { SliderComponent } from './modules/formcontrol/slider.component';
+import { SlideToggleComponent } from './modules/formcontrol/slide-toggle.component';
 
 import { CardComponent } from './modules/layout/card.component';
 import { DividerComponent } from './modules/layout/divider.component';
@@ -31,6 +32,7 @@ const routes: Routes = [
     { path: 'formcontrol/input', component: InputComponent },
     { path: 'formcontrol/radio', component: RadioComponent },
     { path: 'formcontrol/slider', component: SliderComponent },
+    { path: 'formcontrol/slide-toggle', component: SlideToggleComponent },
     { path: 'layout/card', component: CardComponent },
     { path: 'layout/divider', component: DividerComponent },
     { path: 'layout/list', component: ListComponent },
