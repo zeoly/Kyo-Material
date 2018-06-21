@@ -1,0 +1,11 @@
+<h3>简单的拖动条</h3>
+<mat-slider thumbLabel [displayWith]="showValue"></mat-slider>
+<h3>默认取值范围为1-100</h3>
+<mat-slider [(value)]="progress"></mat-slider>
+<button mat-raised-button (click)="roll()" color="primary">点我随机roll：{{progress}}</button>
+<h3>可修改最小/最大值，步进</h3>
+<mat-slider thumbLabel [displayWith]="showValue" step="10" min="100" max="200"></mat-slider>
+<h3>设置刻度</h3>
+<mat-slider thumbLabel [displayWith]="showValue" step="10" tickInterval="1"></mat-slider>
+<h3>垂直拖动条</h3>
+<mat-slider thumbLabel vertical [displayWith]="showValue"></mat-slider>

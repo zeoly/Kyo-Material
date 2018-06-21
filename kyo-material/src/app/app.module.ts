@@ -8,6 +8,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
+import { MatSliderModule } from '@angular/material/slider';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
@@ -35,6 +36,7 @@ import { AutocompleteComponent } from './modules/formcontrol/autocomplete.compon
 import { CheckboxComponent } from './modules/formcontrol/checkbox.component';
 import { InputComponent } from './modules/formcontrol/input.component';
 import { RadioComponent } from './modules/formcontrol/radio.component';
+import { SliderComponent } from './modules/formcontrol/slider.component';
 
 import { CardComponent } from './modules/layout/card.component';
 import { DividerComponent } from './modules/layout/divider.component';
@@ -63,6 +65,7 @@ import { TooltipComponent } from './modules/popups/tooltip.component';
     CheckboxComponent,
     InputComponent,
     RadioComponent,
+    SliderComponent,
     CardComponent,
     DividerComponent,
     ListComponent,
@@ -93,8 +96,9 @@ import { TooltipComponent } from './modules/popups/tooltip.component';
     MatCheckboxModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSelectModule,
     MatRadioModule,
+    MatSelectModule,
+    MatSliderModule,
     MatCardModule,
     MatDividerModule,
     MatListModule,
