@@ -2,6 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.modules';
 
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelectModule } from '@angular/material/select';
+
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
@@ -18,16 +25,16 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
-import { MatAutocompleteModule } from '@angular/material/autocomplete';
-
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppComponent } from './app.component';
+
+import { AutocompleteComponent } from './modules/formcontrol/autocomplete.component';
+import { CheckboxComponent } from './modules/formcontrol/checkbox.component';
+import { InputComponent } from './modules/formcontrol/input.component';
+import { RadioComponent } from './modules/formcontrol/radio.component';
 
 import { CardComponent } from './modules/layout/card.component';
 import { DividerComponent } from './modules/layout/divider.component';
@@ -39,13 +46,11 @@ import { ButtonComponent } from './modules/buttons/button.components';
 import { ButtonToggleComponent } from './modules/buttons/button-toggle.component';
 import { BadgeComponent } from './modules/buttons/badge.component';
 import { ChipsComponent } from './modules/buttons/chips.component';
+import { IconComponent } from './modules/buttons/icon.component';
 import { ProgressSpinerComponent } from './modules/buttons/progress-spinner.component';
 import { ProgressBarComponent } from './modules/buttons/progress-bar.component';
 
-import { IconComponent } from './modules/buttons/icon.component';
 import { SideNavComponent } from './modules/navigation/side-nav.component';
-import { AutocompleteComponent } from './modules/formcontrol/autocomplete.component';
-import { InputComponent } from './modules/formcontrol/input.component';
 
 import { BottomSheetComponent, BottomSheetOverviewComponent } from './modules/popups/bottom-sheet.component';
 import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.component';
@@ -54,6 +59,10 @@ import { TooltipComponent } from './modules/popups/tooltip.component';
 @NgModule({
   declarations: [
     AppComponent,
+    AutocompleteComponent,
+    CheckboxComponent,
+    InputComponent,
+    RadioComponent,
     CardComponent,
     DividerComponent,
     ListComponent,
@@ -67,8 +76,6 @@ import { TooltipComponent } from './modules/popups/tooltip.component';
     ProgressSpinerComponent,
     ProgressBarComponent,
     SideNavComponent,
-    AutocompleteComponent,
-    InputComponent,
     BottomSheetComponent,
     BottomSheetOverviewComponent,
     DialogComponent,
@@ -82,7 +89,12 @@ import { TooltipComponent } from './modules/popups/tooltip.component';
   imports: [
     BrowserAnimationsModule,
     AppRoutingModule,
+    MatAutocompleteModule,
+    MatCheckboxModule,
+    MatInputModule,
     MatFormFieldModule,
+    MatSelectModule,
+    MatRadioModule,
     MatCardModule,
     MatDividerModule,
     MatListModule,
@@ -96,9 +108,6 @@ import { TooltipComponent } from './modules/popups/tooltip.component';
     MatProgressSpinnerModule,
     MatProgressBarModule,
     MatSidenavModule,
-    MatInputModule,
-    MatSelectModule,
-    MatAutocompleteModule,
     MatBottomSheetModule,
     MatDialogModule,
     MatTooltipModule

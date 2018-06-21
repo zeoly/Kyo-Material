@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { AutocompleteComponent } from './modules/formcontrol/autocomplete.component';
+import { CheckboxComponent } from './modules/formcontrol/checkbox.component';
+import { InputComponent } from './modules/formcontrol/input.component';
+import { RadioComponent } from './modules/formcontrol/radio.component';
+
 import { CardComponent } from './modules/layout/card.component';
 import { DividerComponent } from './modules/layout/divider.component';
 import { ListComponent } from './modules/layout/list.component';
@@ -15,16 +20,15 @@ import { IconComponent } from './modules/buttons/icon.component';
 import { ProgressSpinerComponent } from './modules/buttons/progress-spinner.component';
 import { ProgressBarComponent } from './modules/buttons/progress-bar.component';
 
-import { AutocompleteComponent } from './modules/formcontrol/autocomplete.component';
-import { InputComponent } from './modules/formcontrol/input.component';
-
 import { BottomSheetComponent } from './modules/popups/bottom-sheet.component';
 import { DialogComponent } from './modules/popups/dialog.component';
 import { TooltipComponent } from './modules/popups/tooltip.component';
 
 const routes: Routes = [
     { path: 'formcontrol/autocomplete', component: AutocompleteComponent },
+    { path: 'formcontrol/checkbox', component: CheckboxComponent },
     { path: 'formcontrol/input', component: InputComponent },
+    { path: 'formcontrol/radio', component: RadioComponent },
     { path: 'layout/card', component: CardComponent },
     { path: 'layout/divider', component: DividerComponent },
     { path: 'layout/list', component: ListComponent },
