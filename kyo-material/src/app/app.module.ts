@@ -25,6 +25,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppComponent } from './app.component';
 
@@ -48,6 +49,7 @@ import { InputComponent } from './modules/formcontrol/input.component';
 
 import { BottomSheetComponent, BottomSheetOverviewComponent } from './modules/popups/bottom-sheet.component';
 import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.component';
+import { TooltipComponent } from './modules/popups/tooltip.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +72,8 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     BottomSheetComponent,
     BottomSheetOverviewComponent,
     DialogComponent,
-    DialogDetailComponent
+    DialogDetailComponent,
+    TooltipComponent
   ],
   entryComponents: [
     BottomSheetOverviewComponent,
@@ -97,7 +100,8 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     MatSelectModule,
     MatAutocompleteModule,
     MatBottomSheetModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

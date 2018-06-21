@@ -20,6 +20,7 @@ import { InputComponent } from './modules/formcontrol/input.component';
 
 import { BottomSheetComponent } from './modules/popups/bottom-sheet.component';
 import { DialogComponent } from './modules/popups/dialog.component';
+import { TooltipComponent } from './modules/popups/tooltip.component';
 
 const routes: Routes = [
     { path: 'formcontrol/autocomplete', component: AutocompleteComponent },
@@ -37,7 +38,8 @@ const routes: Routes = [
     { path: 'buttons/progress-spinner', component: ProgressSpinerComponent },
     { path: 'buttons/progress-bar', component: ProgressBarComponent },
     { path: 'popups/bottom-sheet', component: BottomSheetComponent },
-    { path: 'popups/dialog', component: DialogComponent }
+    { path: 'popups/dialog', component: DialogComponent },
+    { path: 'popups/tooltip', component: TooltipComponent }
 ];
 
 @NgModule({
