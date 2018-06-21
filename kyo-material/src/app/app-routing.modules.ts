@@ -18,6 +18,7 @@ import { ProgressBarComponent } from './modules/buttons/progress-bar.component';
 import { AutocompleteComponent } from './modules/formcontrol/autocomplete.component';
 import { InputComponent } from './modules/formcontrol/input.component';
 
+import { BottomSheetComponent } from './modules/popups/bottom-sheet.component';
 import { DialogComponent } from './modules/popups/dialog.component';
 
 const routes: Routes = [
@@ -35,6 +36,7 @@ const routes: Routes = [
     { path: 'buttons/icon', component: IconComponent },
     { path: 'buttons/progress-spinner', component: ProgressSpinerComponent },
     { path: 'buttons/progress-bar', component: ProgressBarComponent },
+    { path: 'popups/bottom-sheet', component: BottomSheetComponent },
     { path: 'popups/dialog', component: DialogComponent }
 ];
 

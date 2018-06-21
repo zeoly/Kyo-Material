@@ -23,6 +23,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
@@ -45,6 +46,7 @@ import { SideNavComponent } from './modules/navigation/side-nav.component';
 import { AutocompleteComponent } from './modules/formcontrol/autocomplete.component';
 import { InputComponent } from './modules/formcontrol/input.component';
 
+import { BottomSheetComponent, BottomSheetOverviewComponent } from './modules/popups/bottom-sheet.component';
 import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.component';
 
 @NgModule({
@@ -65,10 +67,13 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     SideNavComponent,
     AutocompleteComponent,
     InputComponent,
+    BottomSheetComponent,
+    BottomSheetOverviewComponent,
     DialogComponent,
     DialogDetailComponent
   ],
   entryComponents: [
+    BottomSheetOverviewComponent,
     DialogDetailComponent
   ],
   imports: [
@@ -91,6 +96,7 @@ import { DialogComponent, DialogDetailComponent } from './modules/popups/dialog.
     MatInputModule,
     MatSelectModule,
     MatAutocompleteModule,
+    MatBottomSheetModule,
     MatDialogModule
   ],
   providers: [],
