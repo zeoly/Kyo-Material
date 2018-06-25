@@ -6,6 +6,7 @@ import { CheckboxComponent } from './modules/formcontrol/checkbox.component';
 import { DatepickerComponent } from './modules/formcontrol/datepicker.component';
 import { InputComponent } from './modules/formcontrol/input.component';
 import { RadioComponent } from './modules/formcontrol/radio.component';
+import { SelectComponent } from './modules/formcontrol/select.component';
 import { SliderComponent } from './modules/formcontrol/slider.component';
 import { SlideToggleComponent } from './modules/formcontrol/slide-toggle.component';
 
@@ -33,6 +34,7 @@ const routes: Routes = [
     { path: 'formcontrol/datepicker', component: DatepickerComponent },
     { path: 'formcontrol/input', component: InputComponent },
     { path: 'formcontrol/radio', component: RadioComponent },
+    { path: 'formcontrol/select', component: SelectComponent },
     { path: 'formcontrol/slider', component: SliderComponent },
     { path: 'formcontrol/slide-toggle', component: SlideToggleComponent },
     { path: 'layout/card', component: CardComponent },

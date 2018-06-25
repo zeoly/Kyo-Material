@@ -1,0 +1,40 @@
+<h3>基本的下拉框</h3>
+<mat-form-field>
+    <mat-select placeholder="收。。。">
+        <mat-option *ngFor="let applience of appliences" [value]="applience">
+            {{ applience }}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+<h3>失效某个选项</h3>
+<mat-form-field>
+    <mat-select placeholder="收。。。">
+        <mat-option value="option1">彩电</mat-option>
+        <mat-option value="option2" disabled>冰箱（不收）</mat-option>
+        <mat-option value="option3">空调</mat-option>
+    </mat-select>
+</mat-form-field>
+<h3>选项分组</h3>
+<mat-form-field>
+    <mat-select placeholder="选择武将">
+        <mat-optgroup *ngFor="let group of warriors" [label]="group.name">
+            <mat-option *ngFor="let warrior of group.warrior" [value]="warrior">{{warrior}}</mat-option>
+        </mat-optgroup>
+    </mat-select>
+</mat-form-field>
+<h3>多选</h3>
+<mat-form-field>
+    <mat-select placeholder="收。。。" multiple>
+        <mat-option *ngFor="let applience of appliences" [value]="applience">{{applience}}</mat-option>
+    </mat-select>
+</mat-form-field>
+<h3>自定义显示标签</h3>
+<mat-form-field>
+    <mat-select placeholder="收。。。" [formControl]="formControl" multiple>
+        <mat-select-trigger>
+            {{formControl.value ? formControl.value[0] : ''}}
+            <span *ngIf="formControl.value?.length > 1">等，共{{formControl.value.length}}个</span>
+        </mat-select-trigger>
+        <mat-option *ngFor="let applience of appliences" [value]="applience">{{applience}}</mat-option>
+    </mat-select>
+</mat-form-field>

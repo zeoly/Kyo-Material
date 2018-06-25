@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.modules';
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
@@ -39,6 +40,7 @@ import { CheckboxComponent } from './modules/formcontrol/checkbox.component';
 import { DatepickerComponent } from './modules/formcontrol/datepicker.component';
 import { InputComponent } from './modules/formcontrol/input.component';
 import { RadioComponent } from './modules/formcontrol/radio.component';
+import { SelectComponent } from './modules/formcontrol/select.component';
 import { SliderComponent } from './modules/formcontrol/slider.component';
 import { SlideToggleComponent } from './modules/formcontrol/slide-toggle.component';
 
@@ -70,6 +72,7 @@ import { TooltipComponent } from './modules/popups/tooltip.component';
     DatepickerComponent,
     InputComponent,
     RadioComponent,
+    SelectComponent,
     SliderComponent,
     SlideToggleComponent,
     CardComponent,
@@ -97,6 +100,8 @@ import { TooltipComponent } from './modules/popups/tooltip.component';
   ],
   imports: [
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     MatAutocompleteModule,
     MatCheckboxModule,
