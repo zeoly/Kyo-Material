@@ -1,0 +1,40 @@
+<h3>简单的日期选择器</h3>
+<mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="选择日期">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<h3>自定义日期面板按钮</h3>
+<mat-form-field>
+    <input matInput [matDatepicker]="picker1" placeholder="选择日期">
+    <mat-datepicker-toggle matSuffix [for]="picker1">
+        <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker #picker1></mat-datepicker>
+</mat-form-field>
+<h3>起始视图设置</h3>
+<h4>year</h4>
+<mat-form-field>
+    <input matInput [matDatepicker]="picker2" placeholder="选择日期">
+    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+    <mat-datepicker #picker2 startView="year"></mat-datepicker>
+</mat-form-field>
+<h4>multi-year</h4>
+<mat-form-field>
+    <input matInput [matDatepicker]="picker3" placeholder="选择日期">
+    <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+    <mat-datepicker #picker3 startView="multi-year"></mat-datepicker>
+</mat-form-field>
+<h3>设置起始日期</h3>
+<mat-form-field>
+    <input matInput [matDatepicker]="picker4" placeholder="选择日期">
+    <mat-datepicker-toggle matSuffix [for]="picker4"></mat-datepicker-toggle>
+    <mat-datepicker #picker4 [startAt]="startDate"></mat-datepicker>
+</mat-form-field>
+<h3>触摸UI模式</h3>
+<mat-form-field>
+    <input matInput [matDatepicker]="picker5" placeholder="选择日期">
+    <mat-datepicker-toggle matSuffix [for]="picker5"></mat-datepicker-toggle>
+    <mat-datepicker #picker5 touchUi="true"></mat-datepicker>
+</mat-form-field>
+<h3>自定义日历头部</h3>

@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.modules';
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
@@ -35,6 +36,7 @@ import { AppComponent } from './app.component';
 
 import { AutocompleteComponent } from './modules/formcontrol/autocomplete.component';
 import { CheckboxComponent } from './modules/formcontrol/checkbox.component';
+import { DatepickerComponent } from './modules/formcontrol/datepicker.component';
 import { InputComponent } from './modules/formcontrol/input.component';
 import { RadioComponent } from './modules/formcontrol/radio.component';
 import { SliderComponent } from './modules/formcontrol/slider.component';
@@ -65,6 +67,7 @@ import { TooltipComponent } from './modules/popups/tooltip.component';
     AppComponent,
     AutocompleteComponent,
     CheckboxComponent,
+    DatepickerComponent,
     InputComponent,
     RadioComponent,
     SliderComponent,
@@ -97,6 +100,8 @@ import { TooltipComponent } from './modules/popups/tooltip.component';
     AppRoutingModule,
     MatAutocompleteModule,
     MatCheckboxModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     MatInputModule,
     MatFormFieldModule,
     MatRadioModule,
