@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AutocompleteComponent } from './modules/formcontrol/autocomplete.component';
 import { CheckboxComponent } from './modules/formcontrol/checkbox.component';
 import { DatepickerComponent } from './modules/formcontrol/datepicker.component';
+import { FormFieldComponent } from './modules/formcontrol/form-field.component';
 import { InputComponent } from './modules/formcontrol/input.component';
 import { RadioComponent } from './modules/formcontrol/radio.component';
 import { SelectComponent } from './modules/formcontrol/select.component';
@@ -32,6 +33,7 @@ const routes: Routes = [
     { path: 'formcontrol/autocomplete', component: AutocompleteComponent },
     { path: 'formcontrol/checkbox', component: CheckboxComponent },
     { path: 'formcontrol/datepicker', component: DatepickerComponent },
+    { path: 'formcontrol/form-field', component: FormFieldComponent },
     { path: 'formcontrol/input', component: InputComponent },
     { path: 'formcontrol/radio', component: RadioComponent },
     { path: 'formcontrol/select', component: SelectComponent },

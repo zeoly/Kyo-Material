@@ -1,1 +1,27 @@
 <h3>普通的自动完成</h3>
+<mat-form-field>
+    <input type="text" placeholder="点击这里" matInput [formControl]="myControl" [matAutocomplete]="auto">
+</mat-form-field>
+<mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let option of options" [value]="option">{{option}}</mat-option>
+</mat-autocomplete>
+<h3>带过滤器</h3>
+<mat-form-field>
+    <input type="text" placeholder="点击这里输入字母" matInput [formControl]="myControl1" [matAutocomplete]="auto1">
+</mat-form-field>
+<mat-autocomplete #auto1="matAutocomplete">
+    <mat-option *ngFor="let letter of filteredOptions | async" [value]="letter">{{letter}}</mat-option>
+</mat-autocomplete>
+<h3>选项分组</h3>
+<form [formGroup]="stateForm">
+    <mat-form-field>
+        <input type="text" placeholder="点击这里输入字母" matInput formControlName="stateGroup" [matAutocomplete]="auto2">
+    </mat-form-field>
+    <mat-autocomplete #auto2="matAutocomplete">
+        <mat-optgroup *ngFor="let group of groupLetterOptions | async" [label]="group.letter">
+            <mat-option *ngFor="let name of group.names" [value]="name">
+                {{ name }}
+            </mat-option>
+        </mat-optgroup>
+    </mat-autocomplete>
+</form>
