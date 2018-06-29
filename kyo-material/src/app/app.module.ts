@@ -34,6 +34,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppComponent } from './app.component';
+import { WelcomeComponent } from './modules/welcome.component';
 
 import { AutocompleteComponent } from './modules/formcontrol/autocomplete.component';
 import { CheckboxComponent } from './modules/formcontrol/checkbox.component';
@@ -68,6 +69,7 @@ import { TooltipComponent } from './modules/popups/tooltip.component';
 @NgModule({
   declarations: [
     AppComponent,
+    WelcomeComponent,
     AutocompleteComponent,
     CheckboxComponent,
     DatepickerComponent,

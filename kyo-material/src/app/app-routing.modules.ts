@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { WelcomeComponent } from './modules/welcome.component';
+
 import { AutocompleteComponent } from './modules/formcontrol/autocomplete.component';
 import { CheckboxComponent } from './modules/formcontrol/checkbox.component';
 import { DatepickerComponent } from './modules/formcontrol/datepicker.component';
@@ -30,6 +32,8 @@ import { DialogComponent } from './modules/popups/dialog.component';
 import { TooltipComponent } from './modules/popups/tooltip.component';
 
 const routes: Routes = [
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: WelcomeComponent },
     { path: 'formcontrol/autocomplete', component: AutocompleteComponent },
     { path: 'formcontrol/checkbox', component: CheckboxComponent },
     { path: 'formcontrol/datepicker', component: DatepickerComponent },
