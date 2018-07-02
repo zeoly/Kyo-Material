@@ -1,0 +1,109 @@
+<h2>首先需要说明下，在form control中的其他某些组件的demo中，其实已经使用了form field，你在其他组件中看到的效果可能不仅仅是其他组件本身。form field封装其他的组件，并添加了如下划线、浮动标签、提示信息等等。</h2>
+<h4> &lt;input matInput&gt; & &lt;textarea matInput&gt; </h4>
+<h4> &lt;mat-select&gt; </h4>
+<h4> &lt;mat-chip-list&gt; </h4>
+<h3>appearance显示效果</h3>
+<p>
+    <mat-form-field appearance="legacy">
+        <mat-label>legacy</mat-label>
+        <input matInput placeholder="传统模式">
+    </mat-form-field>
+</p>
+<p>
+    <mat-form-field appearance="standard">
+        <mat-label>standard</mat-label>
+        <input matInput placeholder="标准模式">
+    </mat-form-field>
+</p>
+<p>
+    <mat-form-field appearance="fill">
+        <mat-label>fill</mat-label>
+        <input matInput placeholder="填充模式">
+    </mat-form-field>
+</p>
+<p>
+    <mat-form-field appearance="outline">
+        <mat-label>outline</mat-label>
+        <input matInput placeholder="轮廓模式">
+    </mat-form-field>
+</p>
+<h3>required必录字段</h3>
+<mat-form-field>
+    <mat-label>这是一个必录字段</mat-label>
+    <input matInput required placeholder="标签末尾会包含一个星号">
+</mat-form-field>
+<h3>floatLabel标签浮动模式</h3>
+<p>
+    <mat-form-field floatLabel="auto">
+        <mat-label>auto</mat-label>
+        <input matInput placeholder="自动浮动">
+    </mat-form-field>
+</p>
+<p>
+    <mat-form-field floatLabel="always">
+        <mat-label>always</mat-label>
+        <input matInput placeholder="一直浮动">
+    </mat-form-field>
+</p>
+<p>
+    <mat-form-field floatLabel="never">
+        <mat-label>never</mat-label>
+        <input matInput placeholder="不浮动">
+    </mat-form-field>
+</p>
+<h3>hintLabel提示标签</h3>
+<mat-form-field hintLabel="这是提示标签">
+    <mat-label>点我</mat-label>
+    <input matInput placeholder="占位符">
+</mat-form-field>
+<h4>标签位置也可以设置</h4>
+<mat-form-field>
+    <mat-label>点我</mat-label>
+    <input matInput placeholder="占位符">
+    <mat-hint align="end">提示标签位置</mat-hint>
+</mat-form-field>
+<h3>错误信息</h3>
+<mat-form-field>
+    <input #input matInput placeholder="3个字符以上会出错" [formControl]="errMsgControl" [errorStateMatcher]="matcher">
+    <mat-error *ngIf="input.value?.length > 3">最多只能输入3个字符</mat-error>
+    <mat-hint>已录入{{input.value?.length || 0}}个字符</mat-hint>
+</mat-form-field>
+<h3>input输入校验</h3>
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="邮箱地址" [formControl]="emailFormControl" [errorStateMatcher]="matcher">
+        <mat-hint>如果有错误将在此即时显示</mat-hint>
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            请输入一个合法的邮件地址！
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+            邮件地址为<strong>必录</strong>！
+        </mat-error>
+    </mat-form-field>
+</form>
+<h3>select校验</h3>
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-select placeholder="选择一个下拉选项" [formControl]="selectedControl" [errorStateMatcher]="matcher">
+            <mat-option>清除选项</mat-option>
+            <mat-option value="valid">合法选项</mat-option>
+            <mat-option value="invalid">非法选项</mat-option>
+        </mat-select>
+        <mat-hint>如果有错误将在此即时显示</mat-hint>
+        <mat-error *ngIf="selectedControl.hasError('required')">必须选择一个选项！</mat-error>
+        <mat-error *ngIf="selectedControl.hasError('pattern') && !selectedControl.hasError('required')">选项非法！</mat-error>
+    </mat-form-field>
+</form>
+<h3>radio校验</h3>
+<!-- <form class="example-form">
+    <mat-form-field class="example-full-width">
+        <label>选择大于5的: </label>
+        <mat-radio-group [formControl]="checkboxControl">
+            <mat-radio-button value="2">2</mat-radio-button>
+            <mat-radio-button value="3">3</mat-radio-button>
+            <mat-radio-button value="6">6</mat-radio-button>
+            <mat-radio-button value="7">7</mat-radio-button>
+        </mat-radio-group>
+        <mat-hint>如果有错误将在此即时显示</mat-hint>
+    </mat-form-field>
+</form> -->
